@@ -1027,6 +1027,8 @@ int main (int argc, char **argv)
 #ifdef TCP_FASTOPEN
         if (fast_open == 0) fast_open = conf->fast_open;
 #endif
+	if (udprelay==0) udprelay=conf->udp_relay;
+
     }
 
     if (server_num == 0 || server_port == NULL || password == NULL)

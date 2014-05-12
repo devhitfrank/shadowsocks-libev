@@ -162,6 +162,10 @@ jconf_t *read_jconf(const char* file)
             {
                 conf.fast_open = value->u.boolean;
             }
+	    else if (strcmp(name,"udp_relay")== 0)
+	    {
+		    conf.udp_relay = value->u.boolean;
+	    }
         }
     }
     else
